@@ -21,11 +21,11 @@ const (
 func CalcSquare(sideLen float64, sidesNum Sides) float64 {
 	var area float64
 	switch sidesNum {
-	case SidesSquare:
+	case SidesCircle:
 		area = (math.Pow(sideLen, 2)) * math.Pi
 	case SidesTriangle:
 		area = (math.Sqrt(3) / 4) * math.Pow(sideLen, 2)
-	case SidesCircle:
+	case SidesSquare:
 		area = math.Pow(sideLen, 2)
 	default:
 		area = 0
